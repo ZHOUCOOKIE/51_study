@@ -1,0 +1,3 @@
+
+.\build\Release\src\main.o TO .\build\Release\LED流水灯
+PRINT(.\build\Release\LED流水灯.map) REMOVEUNUSED

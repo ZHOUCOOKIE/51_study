@@ -1,0 +1,3 @@
+
+.\build\Release\src\main.o TO .\build\Release\独立按键控制LED状态
+PRINT(.\build\Release\独立按键控制LED状态.map) REMOVEUNUSED

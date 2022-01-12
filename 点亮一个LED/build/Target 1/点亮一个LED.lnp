@@ -1,0 +1,3 @@
+
+".\build\Target 1\.o" TO ".\build\Target 1\点亮一个LED"
+PRINT(".\build\Target 1\点亮一个LED.map") REMOVEUNUSED
