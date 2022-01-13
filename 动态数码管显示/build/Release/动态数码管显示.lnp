@@ -1,0 +1,3 @@
+
+.\build\Release\src\main.o TO .\build\Release\动态数码管显示
+PRINT(.\build\Release\动态数码管显示.map) REMOVEUNUSED

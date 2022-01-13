@@ -1,0 +1,42 @@
+[2022-01-13 20:05:56]	[done]
+	build successfully !
+
+[2022-01-13 20:07:02]	[done]
+	build successfully !
+
+[2022-01-13 20:07:18]	[done]
+	build successfully !
+
+[2022-01-13 20:19:01]	compilation failed at : "c:\Users\zhouc\source\repos\51_study\模块化编程\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+C51 COMPILER V9.54 - SN: K1DZC-J6P97C
+COPYRIGHT Copyright (C) 2012 - 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C132 IN LINE 6 OF .\SRC\MAIN.C: 'main': not in formal parameter list
+*** ERROR C141 IN LINE 6 OF .\SRC\MAIN.C: syntax error near '{'
+*** ERROR C132 IN LINE 9 OF .\SRC\MAIN.C: 'Nixie': not in formal parameter list
+*** ERROR C141 IN LINE 10 OF .\SRC\MAIN.C: syntax error near '2'
+*** ERROR C132 IN LINE 10 OF .\SRC\MAIN.C: 'Nixie': not in formal parameter list
+*** ERROR C141 IN LINE 11 OF .\SRC\MAIN.C: syntax error near '3'
+*** ERROR C132 IN LINE 11 OF .\SRC\MAIN.C: 'Nixie': not in formal parameter list
+*** ERROR C141 IN LINE 12 OF .\SRC\MAIN.C: syntax error near '}'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  8 ERROR(S)
+
+[2022-01-13 20:20:21]	[done]
+	build successfully !
+
+[2022-01-13 20:21:35]	[done]
+	build successfully !
+
+[2022-01-13 20:23:05]	[done]
+	build successfully !
+
+[2022-01-13 20:23:13]	[done]
+	build successfully !
+
+[2022-01-13 20:23:23]	[done]
+	build successfully !
+
+[2022-01-13 20:23:59]	[done]
+	build successfully !
+

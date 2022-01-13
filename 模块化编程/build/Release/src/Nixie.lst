@@ -1,0 +1,296 @@
+C51 COMPILER V9.54   NIXIE                                                                 01/13/2022 20:23:58 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE NIXIE
+OBJECT MODULE PLACED IN .\build\Release\src\Nixie.o
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.exe .\SRC\NIXIE.C PRINT(.\build\Release\src\Nixie.lst) OMF2 TABS(4) CODE NOC
+                    -OND SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(.\..\..\..\..\..\..\Keil_v5\C51\INC;.\src) DEFINE(__UVISION_VERSIO
+                    -N=526) OBJECT(.\build\Release\src\Nixie.o)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          #include "Delay.h"
+   3          void Nixie(unsigned char Location,unsigned char Number)
+   4          {
+   5   1          unsigned char NixieTable[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79
+             -,0x71,0x00};
+   6   1          switch(Location)
+   7   1          {
+   8   2              case 1:P2_4=1;P2_3=1;P2_2=1;break;
+   9   2              case 2:P2_4=1;P2_3=1;P2_2=0;break;
+  10   2              case 3:P2_4=1;P2_3=0;P2_2=1;break;
+  11   2              case 4:P2_4=1;P2_3=0;P2_2=0;break;
+  12   2              case 5:P2_4=0;P2_3=1;P2_2=1;break;
+  13   2              case 6:P2_4=0;P2_3=1;P2_2=0;break;
+  14   2              case 7:P2_4=0;P2_3=0;P2_2=1;break;
+  15   2              case 8:P2_4=0;P2_3=0;P2_2=0;break;
+  16   2      
+  17   2          }
+  18   1          P0=NixieTable[Number];
+  19   1          Delay(1);
+  20   1          P0=0X00;
+  21   1      }
+C51 COMPILER V9.54   NIXIE                                                                 01/13/2022 20:23:58 PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION _Nixie (BEGIN)
+                                           ; SOURCE LINE # 3
+0000 8F00        R     MOV     Location,R7
+0002 8D00        R     MOV     Number,R5
+                                           ; SOURCE LINE # 4
+                                           ; SOURCE LINE # 5
+0004 7800        R     MOV     R0,#LOW NixieTable
+0006 7C00        R     MOV     R4,#HIGH NixieTable
+0008 7D00              MOV     R5,#00H
+000A 7BFF              MOV     R3,#0FFH
+000C 7A00        R     MOV     R2,#HIGH _?ix1000
+000E 7900        R     MOV     R1,#LOW _?ix1000
+0010 7E00              MOV     R6,#00H
+0012 7F11              MOV     R7,#011H
+0014 120000      E     LCALL   ?C?COPY
+                                           ; SOURCE LINE # 6
+0017 E500        R     MOV     A,Location
+0019 14                DEC     A
+001A B40800            CJNE    A,#08H,?C0011
+001D         ?C0011:
+001D 5054              JNC     ?C0001
+001F 900000      R     MOV     DPTR,#?C0012
+0022 75F003            MOV     B,#03H
+0025 A4                MUL     AB
+0026 C583              XCH     A,DPH
+0028 25F0              ADD     A,B
+002A C583              XCH     A,DPH
+002C 73                JMP     @A+DPTR
+002D         ?C0012:
+002D 020000      R     LJMP    ?C0002
+0030 020000      R     LJMP    ?C0003
+0033 020000      R     LJMP    ?C0004
+0036 020000      R     LJMP    ?C0005
+0039 020000      R     LJMP    ?C0006
+003C 020000      R     LJMP    ?C0007
+003F 020000      R     LJMP    ?C0008
+0042 020000      R     LJMP    ?C0009
+                                           ; SOURCE LINE # 7
+                                           ; SOURCE LINE # 8
+0045         ?C0002:
+0045 D2A4              SETB    P2_4
+0047 800E              SJMP    ?C0013
+                                           ; SOURCE LINE # 9
+0049         ?C0003:
+0049 D2A4              SETB    P2_4
+004B 8012              SJMP    ?C0014
+                                           ; SOURCE LINE # 10
+004D         ?C0004:
+004D D2A4              SETB    P2_4
+004F 8016              SJMP    ?C0015
+                                           ; SOURCE LINE # 11
+0051         ?C0005:
+0051 D2A4              SETB    P2_4
+0053 801A              SJMP    ?C0016
+                                           ; SOURCE LINE # 12
+0055         ?C0006:
+0055 C2A4              CLR     P2_4
+0057         ?C0013:
+0057 D2A3              SETB    P2_3
+C51 COMPILER V9.54   NIXIE                                                                 01/13/2022 20:23:58 PAGE 3   
+
+0059 D2A2              SETB    P2_2
+005B 8016              SJMP    ?C0001
+                                           ; SOURCE LINE # 13
+005D         ?C0007:
+005D C2A4              CLR     P2_4
+005F         ?C0014:
+005F D2A3              SETB    P2_3
+0061 C2A2              CLR     P2_2
+0063 800E              SJMP    ?C0001
+                                           ; SOURCE LINE # 14
+0065         ?C0008:
+0065 C2A4              CLR     P2_4
+0067         ?C0015:
+0067 C2A3              CLR     P2_3
+0069 D2A2              SETB    P2_2
+006B 8006              SJMP    ?C0001
+                                           ; SOURCE LINE # 15
+006D         ?C0009:
+006D C2A4              CLR     P2_4
+006F         ?C0016:
+006F C2A3              CLR     P2_3
+0071 C2A2              CLR     P2_2
+                                           ; SOURCE LINE # 17
+0073         ?C0001:
+                                           ; SOURCE LINE # 18
+0073 7400        R     MOV     A,#LOW NixieTable
+0075 2500        R     ADD     A,Number
+0077 F8                MOV     R0,A
+0078 E6                MOV     A,@R0
+0079 F580              MOV     P0,A
+                                           ; SOURCE LINE # 19
+007B 7F01              MOV     R7,#01H
+007D 7E00              MOV     R6,#00H
+007F 120000      E     LCALL   _Delay
+                                           ; SOURCE LINE # 20
+0082 E4                CLR     A
+0083 F580              MOV     P0,A
+                                           ; SOURCE LINE # 21
+0085 22                RET     
+             ; FUNCTION _Nixie (END)
+
+C51 COMPILER V9.54   NIXIE                                                                 01/13/2022 20:23:58 PAGE 4   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+_Nixie . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  Location . . . . . . . . . . . . . .  AUTO     DATA   U_CHAR   0000H  1
+  Number . . . . . . . . . . . . . . .  AUTO     DATA   U_CHAR   0001H  1
+  NixieTable . . . . . . . . . . . . .  AUTO     DATA   ARRAY    0002H  17
+P0 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0080H  1
+P1 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0090H  1
+P2 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A0H  1
+P3 . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B0H  1
+AC . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D6H  1
+T0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B4H  1
+T1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B5H  1
+EA . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AFH  1
+T2 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+IE . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00A8H  1
+P0_0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0080H  1
+P1_0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+P0_1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0081H  1
+P2_0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A0H  1
+P1_1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0091H  1
+P0_2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0082H  1
+P3_0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B0H  1
+P2_1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A1H  1
+P1_2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0092H  1
+P0_3 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0083H  1
+P3_1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B1H  1
+P2_2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A2H  1
+P1_3 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0093H  1
+P0_4 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0084H  1
+P3_2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B2H  1
+P2_3 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A3H  1
+P1_4 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0094H  1
+P0_5 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0085H  1
+EXF2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CEH  1
+RD . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B7H  1
+P3_3 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B3H  1
+P2_4 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A4H  1
+P1_5 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0095H  1
+P0_6 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0086H  1
+P3_4 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B4H  1
+P2_5 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A5H  1
+P1_6 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0096H  1
+P0_7 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0087H  1
+P3_5 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B5H  1
+ES . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ACH  1
+P2_6 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A6H  1
+P1_7 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0097H  1
+P3_6 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B6H  1
+P2_7 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A7H  1
+IP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00B8H  1
+P3_7 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B7H  1
+RI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0098H  1
+CY . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D7H  1
+INT0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B2H  1
+INT1 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B3H  1
+TI . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0099H  1
+RCAP2H . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CBH  1
+PS . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BCH  1
+C51 COMPILER V9.54   NIXIE                                                                 01/13/2022 20:23:58 PAGE 5   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+SP . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0081H  1
+T2EX . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0091H  1
+OV . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D2H  1
+RCAP2L . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CAH  1
+C_T2 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C9H  1
+WR . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B6H  1
+RCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CDH  1
+TCLK . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CCH  1
+SBUF . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0099H  1
+PCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0087H  1
+SCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0098H  1
+TMOD . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0089H  1
+TCON . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0088H  1
+IE0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0089H  1
+IE1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008BH  1
+B. . . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00F0H  1
+_?ix1000 . . . . . . . . . . . . . . .  STATIC   CODE   ARRAY    0000H  17
+CP_RL2 . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00C8H  1
+ACC. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00E0H  1
+ET0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A9H  1
+ET1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ABH  1
+TF0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008DH  1
+ET2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00ADH  1
+TF1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008FH  1
+TF2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CFH  1
+RB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009AH  1
+TH0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008CH  1
+EX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00A8H  1
+IT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0088H  1
+TH1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008DH  1
+EX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AAH  1
+TB8. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009BH  1
+IT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008AH  1
+TH2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CDH  1
+P. . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D0H  1
+SM0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009FH  1
+TL0. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008AH  1
+SM1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009EH  1
+TL1. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   008BH  1
+SM2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009DH  1
+TL2. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00CCH  1
+PT0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B9H  1
+RS0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D3H  1
+PT1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BBH  1
+RS1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D4H  1
+PT2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BDH  1
+TR0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008CH  1
+TR1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008EH  1
+TR2. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CAH  1
+PX0. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B8H  1
+PX1. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00BAH  1
+DPH. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0083H  1
+DPL. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0082H  1
+EXEN2. . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00CBH  1
+REN. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      009CH  1
+T2MOD. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C9H  1
+T2CON. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C8H  1
+C51 COMPILER V9.54   NIXIE                                                                 01/13/2022 20:23:58 PAGE 6   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+RXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B0H  1
+TXD. . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00B1H  1
+_Delay . . . . . . . . . . . . . . . .  EXTERN   CODE   PROC     -----  -----
+F0 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D5H  1
+F1 . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00D1H  1
+PSW. . . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00D0H  1
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    134    ----
+   CONSTANT SIZE    =     17    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      19
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
