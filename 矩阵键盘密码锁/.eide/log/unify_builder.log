@@ -1,0 +1,59 @@
+[2022-01-14 17:15:33]	[done]
+	build successfully !
+
+[2022-01-14 17:41:21]	compilation failed at : "c:\Users\zhouc\source\repos\51_study\矩阵键盘\src\MatrixKey.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+C51 COMPILER V9.54 - SN: K1DZC-J6P97C
+COPYRIGHT Copyright (C) 2012 - 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 10 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 11 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 12 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 13 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 17 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 18 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 19 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 20 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 24 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 25 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 26 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 27 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 31 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 32 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 33 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+*** ERROR C141 IN LINE 34 OF .\SRC\MATRIXKEY.C: syntax error near '}'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  16 ERROR(S)
+
+[2022-01-14 17:46:17]	[done]
+	build successfully !
+
+[2022-01-14 17:47:13]	[done]
+	build successfully !
+
+[2022-01-14 18:03:11]	[done]
+	build successfully !
+
+[2022-01-14 18:03:43]	[done]
+	build successfully !
+
+[2022-01-14 18:05:40]	[done]
+	build successfully !
+
+[2022-01-14 18:10:14]	[done]
+	build successfully !
+
+[2022-01-14 18:11:25]	[done]
+	build successfully !
+
+[2022-01-14 18:11:46]	[done]
+	build successfully !
+
+[2022-01-14 18:13:26]	[done]
+	build successfully !
+
+[2022-01-14 18:14:45]	[done]
+	build successfully !
+
+[2022-01-14 18:18:10]	[done]
+	build successfully !
+
