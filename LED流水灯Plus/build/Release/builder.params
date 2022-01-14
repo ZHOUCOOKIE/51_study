@@ -4,11 +4,11 @@
     "toolchain": "Keil_C51",
     "showRepathOnLog": true,
     "threadNum": 8,
-    "rootDir": "c:\\Users\\zhouc\\Documents\\KeilProject\\LED流水灯Plus",
+    "rootDir": "c:\\Users\\zhouc\\source\\repos\\51_study\\LED流水灯Plus",
     "dumpPath": ".eide\\log",
     "outDir": "build\\Release",
     "incDirs": [
-        "..\\..\\..\\..\\..\\Keil_v5\\C51\\INC",
+        "..\\..\\..\\..\\..\\..\\Keil_v5\\C51\\INC",
         "src"
     ],
     "libDirs": [],
@@ -19,7 +19,7 @@
         "src\\main.c"
     ],
     "sourceParams": {},
-    "sourceParamsMtime": 1641982293693.2722,
+    "sourceParamsMtime": 1642093405310.9893,
     "options": {
         "beforeBuildTasks": [],
         "afterBuildTasks": [],
