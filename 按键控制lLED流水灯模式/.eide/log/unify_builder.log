@@ -1,0 +1,92 @@
+[2022-01-19 21:26:51]	compilation failed at : "c:\Users\zhouc\source\repos\51_study\按键控制lLED流水灯模式\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+C51 COMPILER V9.54 - SN: K1DZC-J6P97C
+COPYRIGHT Copyright (C) 2012 - 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C202 IN LINE 5 OF .\SRC\MAIN.C: 'OX01': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-01-19 21:27:19]	[done]
+	build successfully !
+
+[2022-01-19 21:28:39]	[done]
+	build successfully !
+
+[2022-01-19 21:29:17]	[done]
+	build successfully !
+
+[2022-01-19 21:33:03]	[done]
+	build successfully !
+
+[2022-01-19 21:33:19]	[done]
+	build successfully !
+
+[2022-01-19 21:33:59]	[done]
+	build successfully !
+
+[2022-01-19 21:36:11]	[done]
+	build successfully !
+
+[2022-01-19 21:37:37]	[done]
+	build successfully !
+
+[2022-01-19 21:39:03]	[done]
+	build successfully !
+
+[2022-01-19 21:39:59]	[done]
+	build successfully !
+
+[2022-01-19 21:59:46]	compilation failed at : "c:\Users\zhouc\source\repos\51_study\按键控制lLED流水灯模式\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+C51 COMPILER V9.54 - SN: K1DZC-J6P97C
+COPYRIGHT Copyright (C) 2012 - 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 6 OF .\SRC\MAIN.C: syntax error near 'void'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-01-19 22:00:11]	compilation failed at : "c:\Users\zhouc\source\repos\51_study\按键控制lLED流水灯模式\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+C51 COMPILER V9.54 - SN: K1DZC-J6P97C
+COPYRIGHT Copyright (C) 2012 - 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C141 IN LINE 6 OF .\SRC\MAIN.C: syntax error near 'void'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-01-19 22:00:38]	[done]
+	build successfully !
+
+[2022-01-19 22:14:39]	[done]
+	build successfully !
+
+[2022-01-19 22:15:44]	[done]
+	build successfully !
+
+[2022-01-19 22:16:30]	[done]
+	build successfully !
+
+[2022-01-19 22:17:06]	[done]
+	build successfully !
+
+[2022-01-19 22:19:38]	[done]
+	build successfully !
+
+[2022-01-19 22:20:43]	[done]
+	build successfully !
+
+[2022-01-19 22:21:36]	[done]
+	build successfully !
+
+[2022-01-19 22:33:25]	compilation failed at : "c:\Users\zhouc\source\repos\51_study\按键控制lLED流水灯模式\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+C51 COMPILER V9.54 - SN: K1DZC-J6P97C
+COPYRIGHT Copyright (C) 2012 - 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+*** ERROR C202 IN LINE 38 OF .\SRC\MAIN.C: 'TOCount': undefined identifier
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-01-19 22:33:44]	[done]
+	build successfully !
+
+[2022-01-19 22:35:44]	[done]
+	build successfully !
+

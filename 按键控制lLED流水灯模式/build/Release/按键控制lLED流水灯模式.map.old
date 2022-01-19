@@ -1,0 +1,160 @@
+LX51 LINKER/LOCATER V4.66.41.0                                                          01/19/2022  22:33:44  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.41.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\RELEASE\SRC\DELAY.O, .\BUILD\RELEASE\SRC\KEY.O, .\BUILD\RELEASE\SRC\TIMER0.O, .\BUIL
+>> D\RELEASE\SRC\MAIN.O TO .\BUILD\RELEASE\��������LLED��ˮ��ģʽ PRINT (.\build\Release\��������lLED��ˮ��ģʽ.map) REM
+>> OVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\RELEASE\SRC\DELAY.O (DELAY)
+         COMMENT TYPE 0: C51 V9.54
+  .\BUILD\RELEASE\SRC\KEY.O (KEY)
+         COMMENT TYPE 0: C51 V9.54
+  .\BUILD\RELEASE\SRC\TIMER0.O (TIMER0)
+         COMMENT TYPE 0: C51 V9.54
+  .\BUILD\RELEASE\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.54
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\RELEASE\��������LLED��ˮ��ģʽ (DELAY)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000128H   CODE
+I:000000H   I:000000H   I:00007FH   00000FH   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\RELEASE\��������LLED��ˮ��ģʽ (DELAY)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00000BH   000004H   BYTE   UNIT     DATA           ?DT?MAIN
+00000CH   00000EH   000003H   BYTE   UNIT     DATA           _DATA_GROUP_
+00000FH   00000FH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00000AH   000008H   ---    ---      **GAP**
+00000BH   00000DH   000003H   BYTE   OFFS..   CODE           ?MAIN?0000B
+00000EH   000073H   000066H   BYTE   UNIT     CODE           ?PR?TIMER0_ROUTINE?MAIN
+000074H   0000D4H   000061H   BYTE   UNIT     CODE           ?PR?KEY?KEY
+0000D5H   0000F4H   000020H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0000F5H   00010CH   000018H   BYTE   UNIT     CODE           ?PR?_DELAY?DELAY
+00010DH   000123H   000017H   BYTE   UNIT     CODE           ?PR?TIMER0INIT?TIMER0
+000124H   00012FH   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\RELEASE\��������LLED��ˮ��ģʽ (DELAY)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+TIMER0_ROUTINE/MAIN         ----- -----  ----- -----
+
+*** NEW ROOT **************
+LX51 LINKER/LOCATER V4.66.41.0                                                        01/19/2022  22:33:44  PAGE 2
+
+
+
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> TIMER0INIT/TIMER0
+  +--> KEY/KEY
+
+TIMER0INIT/TIMER0           ----- -----  ----- -----
+
+KEY/KEY                     ----- -----  000CH 000CH
+  +--> _DELAY/DELAY
+
+_DELAY/DELAY                ----- -----  000DH 000EH
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\RELEASE\��������LLED��ˮ��ģʽ (DELAY)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      010000D5H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      010000F5H   CODE     ---       _Delay
+      01000074H   CODE     ---       Key
+      0000000AH   DATA     BYTE      KeyNum
+      0000000BH   DATA     BYTE      LEDMode
+      010000D5H   CODE     ---       main
+      0100000EH   CODE     ---       Timer0_Routine
+      0100010DH   CODE     ---       Timer0Init
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\RELEASE\��������LLED��ˮ��ģʽ (DELAY)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       DELAY
+      010000F5H   PUBLIC    CODE     ---       _Delay
+
+      010000F5H   BLOCK     CODE     ---       LVL=0
+      010000F9H   BLOCK     CODE     NEAR LAB  LVL=1
+      0000000DH   SYMBOL    DATA     VOID      i
+      0000000EH   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       KEY
+      01000074H   PUBLIC    CODE     ---       Key
+
+      01000074H   BLOCK     CODE     ---       LVL=0
+      01000074H   BLOCK     CODE     NEAR LAB  LVL=1
+      0000000CH   SYMBOL    DATA     VOID      KeyNunber
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       TIMER0
+      0100010DH   PUBLIC    CODE     ---       Timer0Init
+
+      0100010DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+LX51 LINKER/LOCATER V4.66.41.0                                                        01/19/2022  22:33:44  PAGE 3
+
+
+      ---         MODULE    ---      ---       MAIN
+      0000000BH   PUBLIC    DATA     BYTE      LEDMode
+      0000000AH   PUBLIC    DATA     BYTE      KeyNum
+      0100000EH   PUBLIC    CODE     ---       Timer0_Routine
+      010000D5H   PUBLIC    CODE     ---       main
+
+      010000D5H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100000EH   BLOCK     CODE     ---       LVL=0
+      01000019H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000008H   SYMBOL    DATA     VOID      T0Count
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+Program Size: data=16.0 xdata=0 const=0 code=296
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
