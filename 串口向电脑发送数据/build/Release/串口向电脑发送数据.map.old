@@ -1,0 +1,128 @@
+LX51 LINKER/LOCATER V4.41                                                               01/21/2022  18:39:38  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.41, INVOKED BY:
+C:\KEIL\C51\BIN\LX51.EXE .\BUILD\RELEASE\SRC\DELAY.O, .\BUILD\RELEASE\SRC\MAIN.O TO .\BUILD\RELEASE\��������Է������� P
+>> RINT (.\build\Release\��������Է�������.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\RELEASE\SRC\DELAY.O (DELAY)
+         COMMENT TYPE 0: C51 V9.01
+  .\BUILD\RELEASE\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.01
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\RELEASE\��������Է������� (DELAY)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000059H   CODE
+I:000000H   I:000000H   I:00007FH   00000BH   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\RELEASE\��������Է������� (DELAY)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000009H   000002H   BYTE   UNIT     DATA           _DATA_GROUP_
+00000AH   00000AH   000001H   BYTE   UNIT     DATA           ?DT?MAIN
+00000BH   00000BH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00001AH   000018H   BYTE   UNIT     CODE           ?PR?_DELAY?DELAY
+00001BH   000031H   000017H   BYTE   UNIT     CODE           ?PR?UARTINIT?MAIN
+000032H   000044H   000013H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+000045H   000050H   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000051H   000058H   000008H   BYTE   UNIT     CODE           ?PR?_UART_SENDBYTE?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\RELEASE\��������Է������� (DELAY)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> ?PR?MAIN?MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> ?PR?UARTINIT?MAIN
+  +--> ?PR?_UART_SENDBYTE?MAIN
+  +--> ?PR?_DELAY?DELAY
+
+UARTINIT/MAIN               ----- -----  ----- -----
+
+_UART_SENDBYTE/MAIN         ----- -----  ----- -----
+LX51 LINKER/LOCATER V4.41                                                             01/21/2022  18:39:38  PAGE 2
+
+
+
+_DELAY/DELAY                ----- -----  0008H 0009H
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\RELEASE\��������Է������� (DELAY)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000032H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01000003H   CODE     ---       _Delay
+      01000051H   CODE     ---       _UART_SendByte
+      01000032H   CODE     ---       main
+      0000000AH   DATA     BYTE      Sec
+      0100001BH   CODE     ---       UartInit
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\RELEASE\��������Է������� (DELAY)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       DELAY
+      01000003H   PUBLIC    CODE     ---       _Delay
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000007H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000008H   SYMBOL    DATA     VOID      i
+      00000009H   SYMBOL    DATA     VOID      j
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      0000000AH   PUBLIC    DATA     BYTE      Sec
+      01000032H   PUBLIC    CODE     ---       main
+      01000051H   PUBLIC    CODE     ---       _UART_SendByte
+      0100001BH   PUBLIC    CODE     ---       UartInit
+
+      0100001BH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000051H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000032H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+Program Size: data=12.0 xdata=0 const=0 code=89
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
