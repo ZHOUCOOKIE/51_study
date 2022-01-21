@@ -90,3 +90,22 @@ C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
 [2022-01-19 22:35:44]	[done]
 	build successfully !
 
+[2022-01-21 10:28:32]	compilation failed at : "c:\Users\ZHOUIU\source\repos\ZHOUCOOKIE\51_study\按键控制lLED流水灯模式\src\Key.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x01851] in <bd848165df964d26b51d3d1ad263c7b0>:0 
+---
+C51 COMPILER V9.01 - SN: K1DZC-TW8IHC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** WARNING C318 IN LINE 1 OF .\SRC\KEY.C: can't open file 'REGX52.H'
+*** ERROR C202 IN LINE 7 OF .\SRC\KEY.C: 'P3_1': undefined identifier
+*** ERROR C202 IN LINE 7 OF .\SRC\KEY.C: 'P3_1': undefined identifier
+*** ERROR C202 IN LINE 8 OF .\SRC\KEY.C: 'P3_0': undefined identifier
+*** ERROR C202 IN LINE 8 OF .\SRC\KEY.C: 'P3_0': undefined identifier
+*** ERROR C202 IN LINE 9 OF .\SRC\KEY.C: 'P3_2': undefined identifier
+*** ERROR C202 IN LINE 9 OF .\SRC\KEY.C: 'P3_2': undefined identifier
+*** ERROR C202 IN LINE 10 OF .\SRC\KEY.C: 'P3_3': undefined identifier
+*** ERROR C202 IN LINE 10 OF .\SRC\KEY.C: 'P3_3': undefined identifier
+C51 COMPILATION COMPLETE.  1 WARNING(S),  8 ERROR(S)
+
+[2022-01-21 10:29:19]	[done]
+	build successfully !
+

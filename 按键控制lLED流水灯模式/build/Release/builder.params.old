@@ -3,12 +3,12 @@
     "target": "Release",
     "toolchain": "Keil_C51",
     "showRepathOnLog": true,
-    "threadNum": 8,
-    "rootDir": "c:\\Users\\zhouc\\source\\repos\\51_study\\按键控制lLED流水灯模式",
+    "threadNum": 16,
+    "rootDir": "c:\\Users\\ZHOUIU\\source\\repos\\ZHOUCOOKIE\\51_study\\按键控制lLED流水灯模式",
     "dumpPath": ".eide\\log",
     "outDir": "build\\Release",
     "incDirs": [
-        "..\\..\\..\\..\\..\\..\\Keil_v5\\C51\\INC",
+        "..\\..\\..\\..\\..\\..\\..\\Keil\\C51\\INC",
         "src"
     ],
     "libDirs": [],
@@ -22,7 +22,7 @@
         "src\\main.c"
     ],
     "sourceParams": {},
-    "sourceParamsMtime": 1642598803964.5564,
+    "sourceParamsMtime": 1642730904491.3843,
     "options": {
         "beforeBuildTasks": [],
         "afterBuildTasks": [],

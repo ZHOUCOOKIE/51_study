@@ -1,10 +1,10 @@
-LX51 LINKER/LOCATER V4.66.41.0                                                          01/19/2022  22:35:44  PAGE 1
+LX51 LINKER/LOCATER V4.41                                                               01/21/2022  10:29:19  PAGE 1
 
 
-LX51 LINKER/LOCATER V4.66.41.0, INVOKED BY:
-C:\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\RELEASE\SRC\DELAY.O, .\BUILD\RELEASE\SRC\KEY.O, .\BUILD\RELEASE\SRC\TIMER0.O, .\BUIL
->> D\RELEASE\SRC\MAIN.O TO .\BUILD\RELEASE\按键控制LLED流水灯模式 PRINT (.\build\Release\按键控制lLED流水灯模式.map) REM
->> OVEUNUSED
+LX51 LINKER/LOCATER V4.41, INVOKED BY:
+C:\KEIL\C51\BIN\LX51.EXE .\BUILD\RELEASE\SRC\DELAY.O, .\BUILD\RELEASE\SRC\KEY.O, .\BUILD\RELEASE\SRC\TIMER0.O, .\BUILD\R
+>> ELEASE\SRC\MAIN.O TO .\BUILD\RELEASE\按键控制LLED流水灯模式 PRINT (.\build\Release\按键控制lLED流水灯模式.map) REMOVE
+>> UNUSED
 
 
 CPU MODE:     8051 MODE
@@ -13,14 +13,14 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   .\BUILD\RELEASE\SRC\DELAY.O (DELAY)
-         COMMENT TYPE 0: C51 V9.54
+         COMMENT TYPE 0: C51 V9.01
   .\BUILD\RELEASE\SRC\KEY.O (KEY)
-         COMMENT TYPE 0: C51 V9.54
+         COMMENT TYPE 0: C51 V9.01
   .\BUILD\RELEASE\SRC\TIMER0.O (TIMER0)
-         COMMENT TYPE 0: C51 V9.54
+         COMMENT TYPE 0: C51 V9.01
   .\BUILD\RELEASE\SRC\MAIN.O (MAIN)
-         COMMENT TYPE 0: C51 V9.54
-  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 0: C51 V9.01
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
          COMMENT TYPE 1: A51 / ASM51 Assembler
 
 
@@ -67,21 +67,21 @@ FUNCTION/MODULE              BIT_GROUP   DATA_GROUP
 TIMER0_ROUTINE/MAIN         ----- -----  ----- -----
 
 *** NEW ROOT **************
-LX51 LINKER/LOCATER V4.66.41.0                                                        01/19/2022  22:35:44  PAGE 2
+LX51 LINKER/LOCATER V4.41                                                             01/21/2022  10:29:19  PAGE 2
 
 
 
 ?C_C51STARTUP               ----- -----  ----- -----
-  +--> MAIN/MAIN
+  +--> ?PR?MAIN?MAIN
 
 MAIN/MAIN                   ----- -----  ----- -----
-  +--> TIMER0INIT/TIMER0
-  +--> KEY/KEY
+  +--> ?PR?TIMER0INIT?TIMER0
+  +--> ?PR?KEY?KEY
 
 TIMER0INIT/TIMER0           ----- -----  ----- -----
 
 KEY/KEY                     ----- -----  000CH 000CH
-  +--> _DELAY/DELAY
+  +--> ?PR?_DELAY?DELAY
 
 _DELAY/DELAY                ----- -----  000DH 000EH
 
@@ -135,7 +135,7 @@ SYMBOL TABLE OF MODULE:  .\BUILD\RELEASE\按键控制LLED流水灯模式 (DELAY)
       010000FBH   BLOCK     CODE     ---       LVL=0
       ---         BLOCKEND  ---      ---       LVL=0
 
-LX51 LINKER/LOCATER V4.66.41.0                                                        01/19/2022  22:35:44  PAGE 3
+LX51 LINKER/LOCATER V4.41                                                             01/21/2022  10:29:19  PAGE 3
 
 
       ---         MODULE    ---      ---       MAIN
