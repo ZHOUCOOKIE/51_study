@@ -1,0 +1,1 @@
+.\src\MatrixLED.c PRINT(.\build\Release\src\MatrixLED.lst) OMF2 TABS(4) CODE NOCOND SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(.\..\..\..\..\..\..\..\Keil\C51\INC;.\src) DEFINE(__UVISION_VERSION='526') OBJECT(.\build\Release\src\MatrixLED.o)

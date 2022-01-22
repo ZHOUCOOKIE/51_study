@@ -1,5 +1,6 @@
 #include <REGX52.H>
 #include "Delay.h"
+
 sbit RCK=P3^5;
 sbit SCK=P3^6;
 sbit SER=P3^4;
@@ -24,6 +25,16 @@ void _74HC595_WriteByte(unsigned char Byte)
 }
 
 /**
+ * @brief 点阵屏初始化
+ * 
+ */
+void MatrixLED_Init()
+{
+    SCK=0;
+    RCK=0;
+}
+
+/**
  * @brief LED点阵屏显示一列数据
  * 
  * @param Column 要选择的列，范围：0~7，0在最左边
@@ -35,22 +46,4 @@ void MatrixLED_showCoulumn(unsigned char Column,unsigned char Data)
     MATRIX_LED_PORT=~(0x80>>Column);
     Delay(1);
     MATRIX_LED_PORT=0XFF;
-}
-
-void main()
-{
-    SCK=0;
-    RCK=0;
-
-    while(1)
-    {
-    MatrixLED_showCoulumn(0,0x3C);
-    MatrixLED_showCoulumn(1,0x42);
-    MatrixLED_showCoulumn(2,0xA9);
-    MatrixLED_showCoulumn(3,0x85);
-    MatrixLED_showCoulumn(4,0x85);
-    MatrixLED_showCoulumn(5,0xA9);
-    MatrixLED_showCoulumn(6,0x42);
-    MatrixLED_showCoulumn(7,0x3C);
-    }
 }
