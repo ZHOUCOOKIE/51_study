@@ -1,0 +1,87 @@
+[2022-02-03 16:51:50]	[done]
+	build successfully !
+
+[2022-02-03 16:55:05]	[done]
+	build successfully !
+
+[2022-02-03 16:58:02]	[done]
+	build successfully !
+
+[2022-02-04 12:17:37]	[done]
+	build successfully !
+
+[2022-02-04 12:19:06]	[done]
+	build successfully !
+
+[2022-02-04 12:20:00]	[done]
+	build successfully !
+
+[2022-02-04 12:20:34]	[done]
+	build successfully !
+
+[2022-02-04 12:22:48]	[done]
+	build successfully !
+
+[2022-02-04 12:25:39]	compilation failed at : "c:\51_study\DS1302时钟\src\DS1302.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+C51 COMPILER V9.01 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** ERROR C100 IN LINE 50 OF .\SRC\DS1302.C: unprintable character 0xA3 skipped
+*** ERROR C100 IN LINE 50 OF .\SRC\DS1302.C: unprintable character 0xBB skipped
+*** ERROR C141 IN LINE 51 OF .\SRC\DS1302.C: syntax error near 'return'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  3 ERROR(S)
+
+[2022-02-04 12:26:23]	compilation failed at : "c:\51_study\DS1302时钟\src\DS1302.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+C51 COMPILER V9.01 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** ERROR C141 IN LINE 50 OF .\SRC\DS1302.C: syntax error near ';'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)
+
+[2022-02-04 12:26:39]	[done]
+	build successfully !
+
+[2022-02-04 12:27:35]	[done]
+	build successfully !
+
+[2022-02-04 12:48:50]	[done]
+	build successfully !
+
+[2022-02-04 12:50:51]	[done]
+	build successfully !
+
+[2022-02-04 12:51:37]	[done]
+	build successfully !
+
+[2022-02-04 13:43:56]	[done]
+	build successfully !
+
+[2022-02-04 13:44:58]	[done]
+	build successfully !
+
+[2022-02-04 13:46:08]	[done]
+	build successfully !
+
+[2022-02-04 13:46:29]	[done]
+	build successfully !
+
+[2022-02-04 13:47:49]	[done]
+	build successfully !
+
+[2022-02-04 13:48:48]	[done]
+	build successfully !
+
+[2022-02-04 13:59:45]	[done]
+	build successfully !
+
+[2022-02-04 14:01:07]	[done]
+	build successfully !
+
+[2022-02-04 14:12:54]	[done]
+	build successfully !
+
+[2022-02-04 22:38:22]	[done]
+	build successfully !
+
