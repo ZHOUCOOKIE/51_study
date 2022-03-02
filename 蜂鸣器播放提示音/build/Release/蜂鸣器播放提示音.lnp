@@ -1,0 +1,3 @@
+
+.\build\Release\src\Buzzer.o,.\build\Release\src\Delay.o,.\build\Release\src\Key.o,.\build\Release\src\Nixie.o,.\build\Release\src\main.o TO .\build\Release\蜂鸣器播放提示音
+PRINT(.\build\Release\蜂鸣器播放提示音.map) REMOVEUNUSED

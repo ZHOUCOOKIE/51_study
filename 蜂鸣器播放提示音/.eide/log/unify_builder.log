@@ -1,0 +1,82 @@
+[2022-02-12 17:51:06]	[done]
+	build successfully !
+
+[2022-02-12 17:52:41]	[done]
+	build successfully !
+
+[2022-02-12 17:54:52]	[done]
+	build successfully !
+
+[2022-02-12 18:02:21]	[done]
+	build successfully !
+
+[2022-02-12 18:12:26]	compilation failed at : "c:\51_study\蜂鸣器播放提示音\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+C51 COMPILER V9.01 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** ERROR C141 IN LINE 19 OF .\SRC\MAIN.C: syntax error near 'unsigned'
+*** ERROR C202 IN LINE 19 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 19 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 19 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C141 IN LINE 19 OF .\SRC\MAIN.C: syntax error near ')'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  5 ERROR(S)
+
+[2022-02-12 18:13:02]	compilation failed at : "c:\51_study\蜂鸣器播放提示音\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+C51 COMPILER V9.01 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** ERROR C100 IN LINE 19 OF .\SRC\MAIN.C: unprintable character 0xA3 skipped
+*** ERROR C100 IN LINE 19 OF .\SRC\MAIN.C: unprintable character 0xA8 skipped
+*** ERROR C202 IN LINE 19 OF .\SRC\MAIN.C: 'forint': undefined identifier
+*** ERROR C141 IN LINE 19 OF .\SRC\MAIN.C: syntax error near 'i'
+*** ERROR C202 IN LINE 19 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 19 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C141 IN LINE 19 OF .\SRC\MAIN.C: syntax error near ')'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  7 ERROR(S)
+
+[2022-02-12 18:13:36]	compilation failed at : "c:\51_study\蜂鸣器播放提示音\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+C51 COMPILER V9.01 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** ERROR C100 IN LINE 20 OF .\SRC\MAIN.C: unprintable character 0xA3 skipped
+*** ERROR C100 IN LINE 20 OF .\SRC\MAIN.C: unprintable character 0xA8 skipped
+*** ERROR C202 IN LINE 20 OF .\SRC\MAIN.C: 'fori': undefined identifier
+*** ERROR C141 IN LINE 20 OF .\SRC\MAIN.C: syntax error near ')'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  4 ERROR(S)
+
+[2022-02-12 18:13:50]	[done]
+	build successfully !
+
+[2022-02-12 18:14:12]	compilation failed at : "c:\51_study\蜂鸣器播放提示音\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+C51 COMPILER V9.01 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+*** ERROR C141 IN LINE 20 OF .\SRC\MAIN.C: syntax error near 'unsigned'
+*** ERROR C202 IN LINE 20 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 20 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C202 IN LINE 20 OF .\SRC\MAIN.C: 'i': undefined identifier
+*** ERROR C141 IN LINE 20 OF .\SRC\MAIN.C: syntax error near ')'
+C51 COMPILATION COMPLETE.  0 WARNING(S),  5 ERROR(S)
+
+[2022-02-12 18:14:21]	[done]
+	build successfully !
+
+[2022-02-12 18:20:25]	[done]
+	build successfully !
+
+[2022-02-12 18:28:41]	[done]
+	build successfully !
+
+[2022-02-12 18:31:58]	[done]
+	build successfully !
+
+[2022-02-12 18:32:03]	[done]
+	build successfully !
+
+[2022-02-12 18:33:10]	[done]
+	build successfully !
+
